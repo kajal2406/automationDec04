@@ -1,0 +1,18 @@
+package listBox1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.vel.config.Configurations;
+
+public class SetUp {
+	
+	
+	public static WebDriver  initDriver() {
+		System.setProperty("webdriver.chrome.driver", Configurations.driverPath);
+		WebDriver driver = new ChromeDriver();
+		
+		return driver;
+	}
+
+}
