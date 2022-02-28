@@ -50,6 +50,15 @@ public static void main(String[] args) throws InterruptedException, EncryptedDoc
 	signup.enterEmail(util.readExcelSheet(3, 3));
 	signup.selectGender();
 	signup.selectMonth(util.readExcelSheet(4, 3));
+	
+	//TC04
+	driver.get(Configurations.appURL);
+	signup.enterFirstName(util.readExcelSheet(1, 3));
+	signup.enterLastName(util.readExcelSheet(2, 3));
+	signup.enterEmail(util.readExcelSheet(3, 3));
+	signup.selectGender();
+	signup.selectMonth(util.readExcelSheet(4, 3));
+	
 }
 
 
